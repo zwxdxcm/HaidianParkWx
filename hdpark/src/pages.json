@@ -1,16 +1,65 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [ 
 		{
-			"path": "pages/index/index",
+			"path": "pages/exploration/exploration",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationBarTitleText": "探险手记"
+			}
+		},
+		{
+			"path": "pages/function/function",
+			"style":{
+				"navigationBarTitleText": "功能"
+			}
+		},
+		{
+			"path": "pages/album/album",
+			"style":{
+				"navigationBarTitleText": "图库"
+			}
+		},
+		{
+			"path": "pages/about/about",
+			"style":{
+				"navigationBarTitleText": "海淀公园"
 			}
 		}
+
+		
 	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarTextStyle": "#FFFFFF",
+		"navigationBarTitleText": "海淀公园",
+		"navigationBarBackgroundColor": "#2C2C2C",  
 		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#737373",
+		"selectedColor": "#FFFFFF",
+		"borderStyle": "black",
+		"backgroundColor": "#2C2C2C",
+		"list": [{
+				"pagePath": "pages/exploration/exploration",
+				"iconPath": "static/explore.png",
+				"selectedIconPath": "static/exploreHL.png",
+				"text": "探险手记"
+			},
+			{
+				"pagePath": "pages/function/function",
+				"iconPath": "static/func.png",
+				"selectedIconPath": "static/funcHL.png",
+				"text": "功能"
+			}, {
+				"pagePath": "pages/album/album",
+				"iconPath": "static/album.png",
+				"selectedIconPath": "static/albumHL.png",
+				"text": "图库"
+			}, {
+				"pagePath": "pages/about/about",
+				"iconPath": "static/about.png",
+				"selectedIconPath": "static/aboutHL.png",
+				"text": "关于我们"
+			}
+		]
 	}
 }
