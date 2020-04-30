@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
 		<view>
-			<text class="title">{{title}}</text>
+			<text >拟定功能:1.探险记录 2.探险攻略 </text>
 		</view>
 	</view>
 </template>
@@ -10,7 +10,7 @@
 	export default {
 		data() {
 			return {
-				title: 'Hello'
+				title: '探险手记录'
 			}
 		},
 		onLoad() {
